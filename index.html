@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <!-- <base href="/"> -->
+
+    <title>Simple Starter</title>
+    <meta name="description" content="Simple Starter Description" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <link rel="icon" href="images/favicon.png" />
+    <!-- <meta property="og:image" content="images/preview.jpg" /> -->
+
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/media.css" />
+  </head>
+
+  <body>
+    <!-- HEADER SCROLL -->
+    <header class="header">
+      <div class="logo">
+        <img src="images/hammer-1.svg" alt="hammer" />
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Contacts</a></li>
+      </ul>
+    </header>
+
+    <!-- ACCORDION -->
+
+    <div class="content">
+      <h2 class="title">BLOCK ACCORDION JS</h2>
+
+      <div class="container mt-50">
+        <div class="accordion">
+          <div class="accordion__item">
+            <div
+              class="accordion__top accordion__item--one"
+              data-accordion-close
+            >
+              text accordion 1
+            </div>
+            <div class="accordion__bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              sit.
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div
+              class="accordion__top accordion__item--one"
+              data-accordion-close
+            >
+              text accordion 2
+            </div>
+            <div class="accordion__bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              sit.
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div
+              class="accordion__top accordion__item--one"
+              data-accordion-close
+            >
+              text accordion 3
+            </div>
+            <div class="accordion__bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              sit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci, sit. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Adipisci, sit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Adipisci, sit. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Adipisci, sit. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Adipisci, sit.
+            </div>
+          </div>
+        </div>
+
+        <h3 class="title">Only one open accoridion &#x2193;</h3>
+
+        <div class="accordion accordion-two">
+          <div class="accordion__item">
+            <div
+              class="accordion__top accordion__item--two"
+              data-accordion-close
+            >
+              text accordion 1
+            </div>
+            <div class="accordion__bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              sit.
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div
+              class="accordion__top accordion__item--two"
+              data-accordion-close
+            >
+              text accordion 2
+            </div>
+            <div class="accordion__bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              sit.
+            </div>
+          </div>
+
+          <div class="accordion__item">
+            <div
+              class="accordion__top accordion__item--two"
+              data-accordion-close
+            >
+              text accordion 3
+            </div>
+            <div class="accordion__bottom">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+              sit.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Adipisci, sit. Lorem ipsum dolor sit amet consectetur adipisicing
+              elit. Adipisci, sit. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Adipisci, sit. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Adipisci, sit. Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Adipisci, sit.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- TABS -->
+
+    <div class="content">
+      <h2 class="title">BLOCK TABS JS</h2>
+
+      <div class="container mt-50">
+        <div class="tabs">
+          <div class="tabs__header">
+            <button class="tabs__btn tabs__btn--active" data-tabs-path="1">
+              tab 1
+            </button>
+            <button class="tabs__btn" data-tabs-path="2">tab 2</button>
+            <button class="tabs__btn" data-tabs-path="3">tab 3</button>
+          </div>
+          <div class="tabs__bottom">
+            <div
+              class="tabs__content tabs__content--active"
+              data-tabs-target="1"
+            >
+              1Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              fugiat animi, quibusdam accusantium quia quas odit aliquam harum
+              eos, id distinctio corporis!
+            </div>
+            <div class="tabs__content" data-tabs-target="2">
+              2Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
+              fugiat animi, quibusdam accusantium quia quas odit aliquam
+            </div>
+            <div class="tabs__content" data-tabs-target="3">
+              3Lorem ipsum, dolor sit amet consectetur
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/common.js"></script>
+  </body>
+</html>
