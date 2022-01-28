@@ -63,7 +63,9 @@ h2,
 h3 {
   font-weight: 500;
 }
-
+* {
+  font-family: var(--userfont);
+}
 body {
   font-family: var(--userfont);
   font-size: var(--regular-text);
@@ -268,6 +270,7 @@ body {
   border: 1px solid #fff;
   border-bottom: none;
   padding: 10px 15px;
+  font-size: 22px;
   transition: color 0.25s ease-out;
 }
 .tabs__btn:not(:first-child) {
