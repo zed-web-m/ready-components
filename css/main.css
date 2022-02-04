@@ -406,3 +406,36 @@ body {
   background-color: var(--accent);
   transition: background 0.35s ease;
 }
+
+/* STARS */
+
+.star-container {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.star-container--chk .star {
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  background: url('../images/stars/star-gray.svg') no-repeat center;
+  background-size: contain;
+}
+.star.star__checked,
+.star.star__checked ~ .star {
+  background: url('../images/stars/star-orange.svg') no-repeat center;
+}
+.star-container--chk .star:hover,
+.star-container--chk .star:hover ~ .star,
+.star-container--chk .star.star__checked,
+.star-container--chk .star.star__checked ~ .star {
+  background: url('../images/stars/star-orange.svg') no-repeat center;
+}
+
+.total-stars {
+  font-size: 25px;
+  padding-top: 5px;
+  padding-left: 10px;
+  font-weight: 700;
+}

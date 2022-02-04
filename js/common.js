@@ -75,4 +75,27 @@ document.addEventListener('DOMContentLoaded', function () {
       .querySelector(`[data-tabs-target="${tabsPath}"]`)
       .classList.add('tabs__content--active')
   }
+
+  //stars
+
+  function initialStarRating(e) {
+    let stars = this.querySelectorAll('.star')
+
+    stars.forEach((star) => star.classList.remove('star__checked'))
+    const i = [...stars].indexOf(e.target)
+
+    if (i > -1) {
+      stars[i].classList.add('star__checked')
+      this.setAttribute('data-rating', `${stars.length - i}`)
+
+      // total
+      if (this.querySelector('.total-stars')) {
+        this.querySelector('.total-stars').innerHTML = `${stars.length - i} / 5`
+      }
+    }
+  }
+
+  document.querySelectorAll('.star-container--chk').forEach((container) => {
+    container.addEventListener('click', initialStarRating)
+  })
 })
