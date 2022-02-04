@@ -100,4 +100,23 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.star-container--chk').forEach((container) => {
     container.addEventListener('click', initialStarRating)
   })
+
+  // button to UP PAGE
+
+  const btnToUp = document.querySelector('.arrUp')
+
+  window.addEventListener('scroll', function () {
+    let scrollPosition = parseInt(window.scrollY)
+    if (scrollPosition > 130) {
+      btnToUp.style.opacity = '1'
+      btnToUp.style.visibility = 'visible'
+    } else {
+      btnToUp.style.opacity = '0'
+      btnToUp.style.visibility = 'hidden'
+    }
+  })
+
+  btnToUp.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
+  })
 })
