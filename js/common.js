@@ -89,8 +89,10 @@ document.addEventListener('DOMContentLoaded', function () {
       this.setAttribute('data-rating', `${stars.length - i}`)
 
       // total
-      if (this.querySelector('.total-stars')) {
-        this.querySelector('.total-stars').innerHTML = `${stars.length - i} / 5`
+      if (this.parentNode.querySelector('.total-stars')) {
+        this.parentNode.querySelector('.total-stars').innerHTML = `${
+          stars.length - i
+        } / 5`
       }
     }
   }
