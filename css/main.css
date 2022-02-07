@@ -5,6 +5,7 @@
   --text: rgb(107, 107, 107);
   --regular-text: 21px;
   --bg-color: rgb(17, 17, 17);
+  --color-gay: rgb(107, 107, 107);
   --lineheight: 1.65;
   --userfont: yanone-st, sans-serif;
   --systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif;
@@ -13,6 +14,7 @@
 [data-theme='light'] {
   --text: #000;
   --bg-color: #fff;
+  --color-gay: #000;
 }
 
 /* FONTS LOAD SECTION */
@@ -93,13 +95,13 @@ body {
 
 [data-theme='light'] {
   color: var(--light-text);
-  background-color: #fff;
+  background-color: var(--bg-color);
 }
 
 [data-theme='light'] .tabs__btn,
 [data-theme='light'] .tabs__bottom {
-  border-color: #000;
-  color: #000;
+  border-color: var(--color-gay);
+  color: var(--color-gay);
 }
 [data-theme='light'] .tabs__btn.tabs__btn--active {
   color: var(--accent);
@@ -121,20 +123,18 @@ body {
 .theme-switch-wrapper input[type='checkbox']::before {
   content: '';
   position: absolute;
-  width: 18px;
-  height: 18px;
-  background-color: var(--bg-color);
-  border-radius: 10rem;
-  z-index: 30;
-  left: 9px;
-  top: -2px;
-  transition-delay: 0.2s, 250ms;
-  transition-property: opacity;
+  width: 16px;
+  height: 16px;
+  background: url('../images/sun.svg') no-repeat center;
+  background-size: contain;
+  left: 25px;
+  top: 3px;
 }
 
 .theme-switch-wrapper input[type='checkbox']:checked::before {
-  opacity: 0;
-  transition-delay: 0s, 0ms;
+  background: url('../images/moon.svg') no-repeat center;
+  background-size: contain;
+  left: 3px;
 }
 
 /* USER STYLES */
@@ -327,9 +327,10 @@ body {
 }
 .tabs__btn {
   background: transparent;
-  color: #fff;
+  color: var(--color-gay);
+  font-weight: 700;
   text-transform: uppercase;
-  border: 1px solid #fff;
+  border: 1px solid var(--color-gay);
   border-bottom: none;
   padding: 10px 15px;
   transition: color 0.25s ease-out;
@@ -342,7 +343,7 @@ body {
   border-left: none;
 }
 .tabs__bottom {
-  border: 1px solid #fff;
+  border: 1px solid var(--color-gay);
   padding: 35px;
 }
 .tabs__content {
