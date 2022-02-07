@@ -84,16 +84,18 @@ document.addEventListener('DOMContentLoaded', function () {
     stars.forEach((star) => star.classList.remove('star__checked'))
     const i = [...stars].indexOf(e.target)
 
+    console.log([...stars].indexOf(e.target))
+
     if (i > -1) {
       stars[i].classList.add('star__checked')
       this.setAttribute('data-rating', `${stars.length - i}`)
+    }
 
-      // total
-      if (this.parentNode.querySelector('.total-stars')) {
-        this.parentNode.querySelector('.total-stars').innerHTML = `${
-          stars.length - i
-        } / 5`
-      }
+    // total
+    if (this.hasAttribute('data-rating-total')) {
+      this.parentNode.querySelector('.total-stars').innerHTML = `${
+        stars.length - i
+      } / 5`
     }
   }
 

@@ -414,6 +414,7 @@ body {
   flex-direction: row-reverse;
   justify-content: flex-end;
   gap: 8px;
+  pointer-events: none;
 }
 .star-container--chk .star {
   width: 45px;
@@ -421,6 +422,7 @@ body {
   cursor: pointer;
   background: url('../images/stars/star-gray.svg') no-repeat center;
   background-size: contain;
+  pointer-events: all;
 }
 .star.star__checked,
 .star.star__checked ~ .star {
