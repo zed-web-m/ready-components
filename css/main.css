@@ -216,6 +216,16 @@ body {
   z-index: 100;
 }
 
+.header-container {
+  max-width: 1400px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+}
+
 .header::after {
   content: '';
   position: absolute;
@@ -249,7 +259,6 @@ body {
 .logo {
   width: 200px;
   transition: all 0.25s ease-out;
-  margin-left: 20px;
 }
 
 .header.scrolling {
